@@ -1,0 +1,56 @@
+.taskBox{
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    .header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(247, 247, 247);
+        color: #777;
+        border-bottom: 1px solid #E3E3E3;
+    }
+    .item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        background-color: #F9F9F9;
+        border-bottom: 1px solid #E3E3E3;
+        .left{
+            .check{
+                cursor: pointer;
+            }
+            .title{
+                margin-left: 10px;
+            }
+        }
+        .right{
+            .close{
+                color: #8C7D76;
+                font-weight: 500;
+                cursor: pointer;
+                font-size: 1.2em;
+            }
+        }
+    }
+    .item.completed{
+        background-color: #BBBBBB;
+        .left{
+            .title{
+                color: #fff;
+                text-decoration: line-through;
+            }
+        }
+    }
+    .empty{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        background-color: rgb(247, 247, 247);
+    }
+}

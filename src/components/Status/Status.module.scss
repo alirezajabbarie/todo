@@ -1,0 +1,45 @@
+.status{
+    width: 100%;
+    padding: 0 10px;
+    .box{
+        width: 100%;
+        background-color: #E3E3E3;
+        border: 1px solid #C1BDBD;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 12px;
+        .left{
+            .label{
+                margin-left: 5px;
+                color: #555;
+                font-size: 0.9em;
+            }
+        }
+        .center{
+            .btn{
+                color: #555;
+                margin: 10px;
+                cursor: pointer;
+                font-size: 0.9em;
+            }
+            .active{
+                color: #111;
+                font-size: 1.1em;
+            }
+        }
+        .right{
+            .btn{
+                background-color: #D4D4D4;
+                border: 1px solid #C1BDBD;
+                padding: 3px;
+                color: #555;
+                cursor: pointer;
+                &:hover{
+                    background-color: #C1BDBD;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
