@@ -34,7 +34,7 @@ const Search = () => {
               </div>
               <form className={styles.input} onSubmit={(e)=>submitHandler(e)}>
                     <input className={styles.text} type="text" placeholder='Title...' value={title} onChange={e=>setTitle(e.target.value)} />
-                    <span className={styles.btn} type='Submit'>Submit</span>
+                    <input className={styles.btn} type='Submit' value='Submit'/>
               </form>
           </div>
     );
